@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MenuActivity">
+
+    <!-- Icon and Button -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ic_bill_icon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/bill_splitting"
+            app:srcCompat="@drawable/ic_bill_icon" /> <!-- Adjust the width of the icon -->
+
+        <Button
+            android:id="@+id/idBtnNavigateToBill"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            android:text="@string/equal_break_down"
+            android:background="@drawable/button_selector"/>
+
+    </LinearLayout>
+
+    <!-- Icon and Button -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/custom_bill_splitting"
+            app:srcCompat="@drawable/ic_new_page_icon" /> <!-- Adjust the width of the icon -->
+
+        <Button
+            android:id="@+id/idBtnNavigateToNewPage"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/percentage_break_down"
+            android:background="@drawable/button_selector"/><!-- Adjust the margin between icon and button -->
+        <Button
+            android:id="@+id/idBtnNavigateToNewPage2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/amount_break_down"
+            android:background="@drawable/button_selector"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewPageActivity2">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Total Bill">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idEdtTotalBill2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Edit text field for entering the number of people -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number of People">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idEdtNumberOfPeople2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Button to dynamically generate input fields based on the number of people -->
+    <Button
+        android:id="@+id/idBtnGenerateInputFields2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Generate Input Fields" />
+
+    <!-- Placeholder for dynamically generated input fields -->
+    <LinearLayout
+        android:id="@+id/idInputFieldsContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <!-- Button to calculate and display the custom break-down -->
+    <Button
+        android:id="@+id/idBtnCalculate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Calculate" />
+
+    <!-- Text view to display the calculated break-down -->
+    <TextView
+        android:id="@+id/idTVAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:"
+        android:layout_marginTop="16dp" />
+    <Button
+        android:id="@+id/idBtnReset2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:text="@string/reset"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/idBtnShare"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Share Result" />
+</LinearLayout>

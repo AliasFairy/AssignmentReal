@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AssignmentReal</string>
+    <string name="bill_splitting">Bill Splitting</string>
+    <string name="equal_break_down">Equal Break-down</string>
+    <string name="custom_bill_splitting">Custom Bill Splitting</string>
+    <string name="percentage_break_down">Percent Break-down</string>
+    <string name="amount_break_down">Amount Break-down</string>
+    <string name="enter_total_amount_to_split">Enter total amount to split</string>
+    <string name="enter_number_of_people_to_split">Enter number of people to split</string>
+    <string name="get_amount">Get Amount</string>
+    <string name="reset">Reset</string>
+    <string name="total_bill">Total Bill: %s</string>
+    <string name="individual_amount">Individual Amount : %s</string>
+    <string name="individual_amount_text">Individual Amount: %.2f</string>
+    <string name="total_bill_text">Total Bill: %.2f</string>
+</resources>
